@@ -338,6 +338,7 @@ fn cast_update_outputs(node: &mut Node) {
                 DataType::INT64 => ElementType::Int64,
                 DataType::DOUBLE => ElementType::Float64,
                 DataType::BOOL => ElementType::Bool,
+                DataType::UINT8 => ElementType::Bool,
                 _ => panic!("Cast: unsupported type"),
             },
             _ => panic!("'to' attribute must be an Int64"),
